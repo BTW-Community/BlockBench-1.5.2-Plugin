@@ -13,7 +13,7 @@ Plugin.register('modded_entity_1_5_2', {
 	tags: ["Minecraft: Java Edition"],
 
 	onload() {
-		Codecs.modded_entity.templates['1.5.2'] = {
+		Codecs.modded_entity.templates['Modded-Entity-1.5.2'] = {
 			name: 'Minecraft 1.5.2 (MCP)',
 			flip_y: true,
 			integer_size: true,
@@ -21,7 +21,8 @@ Plugin.register('modded_entity_1_5_2', {
 		   `// Made with Blockbench %(bb_version)
 			// Exported for Minecraft version 1.5.2
 			// Paste this class into your mod and call render() in your Entity Render class
-			// Note: You may need to adjust the y values of the 'setRotationPoint's 
+			// Note: You may need to adjust the y values of the 'setRotationPoint's
+
 			package net.minecraft.src;
 
 			public class %(identifier) extends ModelBase {
@@ -74,7 +75,7 @@ Plugin.register('modded_entity_1_5_2', {
 	},
 
 	onunload() {
-		delete Codecs.modded_entity.templates['1.5.2'];
+		delete Codecs.modded_entity.templates['Modded-Entity-1.5.2'];
 	}
 });
 
